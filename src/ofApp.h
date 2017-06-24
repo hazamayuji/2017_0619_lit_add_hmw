@@ -24,7 +24,7 @@ class ofApp : public ofBaseApp{
 		
     void draw_outer_sphere(int &sph_x);
     
-    //関数の配列化(?)
+    //関数の配列化できる？
     void draw_box(int &box_x);
     void draw_cylinder(int &cyl_x);
     void draw_cone(int &cone_x);

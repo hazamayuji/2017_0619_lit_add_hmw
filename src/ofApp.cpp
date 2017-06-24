@@ -14,6 +14,7 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    //回転
     spinX = sin(ofGetElapsedTimef()*0.5);
     spinY = cos(ofGetElapsedTimef()*0.5);
     
@@ -123,7 +124,7 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 
 }
 
-
+//これだけ繰り返し使用
 void ofApp::draw_outer_sphere(int &sph_x){
     
     ofSetColor(255, 255, 255);
@@ -135,6 +136,9 @@ void ofApp::draw_outer_sphere(int &sph_x){
     
 }
 
+
+
+//座標の位置などを簡単に変えやすいように、コードを見やすくするため関数化
 void ofApp::draw_box(int &box_x){
     
     ofSetColor(255, 0, 0);
